@@ -39,8 +39,8 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec terminator 
 
-# start atom 
-bindsym $mod+z exec atom
+# start code
+bindsym $mod+z exec code
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -129,8 +129,8 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
 
-assign [class="google-chrome"] $ws3
-assign [class="Atom"] $ws2
+assign [class="chrome"] $ws3
+assign [class="VCode"] $ws2
 #assign [class="Telegram"] $ws10
 assign [class="Skype"] $ws10
 assign [class="zoom"] $ws4
@@ -236,12 +236,12 @@ bindsym $mod+Tab	workspace next
 workspace_auto_back_and_forth yes
 
 #exec i3-msg $ws10 append_layout /home/reem/.i3/workspace-10.json
-exec --no-startup-id "i3-msg 'workspace 10: ; append_layout /home/reem/.i3/workspace-10.json'"
+#exec --no-startup-id "i3-msg 'workspace 10: ; append_layout /home/reem/.i3/workspace-10.json'"
 exec /home/reem/Desktop/Telegram/Telegram
-exec whatsie
-exec messengerfordesktop
+#exec whatsie
+#exec messengerfordesktop
 exec google-chrome
-exec atom
+exec code
 #exec xrandr --output VIRTUAL1 --off --output LVDS1 --primary --mode 1600x900 --pos 0x88 --rotate normal --output VGA1 --mode 1920x1080 --pos 1600x0 --rotate normal
 
 #bindsym $mod+Shift+l exec i3lock 
