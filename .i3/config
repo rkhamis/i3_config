@@ -131,7 +131,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 assign [class="chrome"] $ws3
 assign [class="VCode"] $ws2
-#assign [class="Telegram"] $ws10
+assign [class="Telegram"] $ws10
 assign [class="Skype"] $ws10
 assign [class="zoom"] $ws4
 
